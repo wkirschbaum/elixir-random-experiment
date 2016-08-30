@@ -20,5 +20,4 @@ defmodule Random.Settings do
   def handle_call({:update, key: key, value: value}, _from, state) do
     {:reply, :ok, Map.put(state, key, value)}
   end
-
 end
